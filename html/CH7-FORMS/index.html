@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1> Hospital Patient Registeration Form </h1>
+
+    <div class="container">
+        <form>  
+           <fieldset>
+                <legend><b>Personal Information</b></legend>
+         
+            
+               <div class="form-group">
+           <label>First Name</label>
+           <input type="text" class="form-control" placeholder="First Name"required>
+    
+
+    <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control" placeholder="Last Name" required>
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" placeholder="Email" required>
+
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" placeholder="Password" required>
+    </div>
+    <div class="form-group"> 
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Phone Number">
+    </div>
+    <div class="form-group"> 
+        <label>Date of Birth</label>
+        <input type="date">
+    </div>
+    <div class="form-group">
+        <label>Age</label>
+        <input type="number" class="min=0" max="120">
+    </div>   
+    <div class="form-group">
+        <label>Profile Photo</label>
+        <input type="file">  
+    </div>
+
+    <div class="form-group">
+        <label> Patient ID</label>
+        <input type="hidden" value="P-1001">
+    </div>
+
+
+    <div class="Radio-group">
+        <label>Gender</label>
+        <div class="Radio-group">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+    </div>
+   
+</fieldset>
+
+<!-- Address Information -->
+<fieldset>
+    <legend><b>Address Information</b></legend>
+    <div class="form-grid">
+        <label>Street Address</label>
+        <input type= placeholder="Inter Full Address">
+    </div>
+    <div class="form-group">
+        <label>City</label>
+        <input type="text">
+    </div>
+    <div class="form-group">
+        <label>Country</label>
+        <select>
+            <option value="">Select Country</option>
+            <option value="usa">United States</option>
+            <option value="canada">Somalia</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option> 
+        </select>   
+    </div>
+</fieldset>
+
+<!-- Medical Information -->
+<fieldset>  
+    <legend><b>Medical Information</b></legend>
+  
+    <div class="form-group">
+        <label>Blood Type</label>
+        <select>
+            <option value="">Select Blood Type</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>   
+    </div>
+
+    <div class="form-group">
+        <label>Depertment</label>
+        <input list="depertment">
+        
+        <datalist id="depertment">
+            <option value="Cardiology">
+            <option value="Neurology">
+            <option value="Orthopedics">
+            <option value="Pediatrics">
+            <option value="Oncology">
+        </datalist>        
+    </div>
+
+
+    <div class="form-group">
+        <label>Medical History</label>
+        <textarea placeholder="Enter Medical History"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Bed Number</label>
+        <input type="text" placeholder="Enter Bed Number">
+    </div>
+
+    <div class="form-group">
+        <label>Ward</label>
+        <select>
+            <option value="">Select Ward</option>
+            <option value="general">General</option>
+            <option value="icu">ICU</option>
+            <option value="maternity">Maternity</option>
+            <option value="pediatric">Pediatric</option>
+        </select>
+   </div>
+   <div class="form-group">
+    <label>Admission Date</label>
+    <input type="datetime-local">
+    </div>
+    <div class="form-group">
+        <label>Pain Level</label>
+        <input type="number" min="0" max="10" placeholder="Enter Pain Level">
+    </div>
+    <div class="form-group">
+        <label>Favorite color</label>
+        <input type="color">
+    </div>
+    <div class="form-group">
+        <label>Website</label>
+        <input type="url" required>
+    </div>
+
+    <div class="form-group">
+        <label>Medical Conditions</label>
+        
+    <div class="checkbox-group">
+        <label><input type="checkbox" name="condition" value="diabetes"> Diabetes</label>
+        <label><input type="checkbox" name="condition" value="hypertension"> Hypertension</label>
+        <label><input type="checkbox" name="condition" value="asthma"> Asthma</label>
+        <label><input type="checkbox" name="condition" value="heart-disease"> Heart Disease</label>
+     </div>
+    </div>
+    <div class="form-group">
+        <label>Doctor Notes</label>
+        <textarea placeholder="Enter Doctor Notes"></textarea>
+    </div>
+</fieldset>
+
+<!-- Emergency Contact Information -->
+<fieldset>
+    <legend><b>Emergency Contact Information</b></legend>
+    <div class="form-group">
+        <label>Emergency Contact Name</label>
+        <input type="text" placeholder="Enter Emergency Contact Name">
+    </div>
+    <div class="form-group">
+        <label>Emergency Contact Phone</label>
+        <input type="tel" placeholder="Enter Emergency Contact Phone">
+    </div>
+    <div class="form-group">
+        <label>Emergency Contact Relationship</label>
+        <input type="text" placeholder="Enter Emergency Contact Relationship">
+</fieldset>
+<!--Progress / Meter -->
+<fieldset>
+    <legend><b>Hospital Status </b></legend>
+    <div class="Progress-Area">
+        <label>Bed Occupancy</label>
+        <meter value="7" min="0" max="10"></Meter>
+    </div>
+    <div class="Progress-Area">
+        <label>Registration Completation</label>
+        <progress value="80" max="100"></progress>
+    </div>
+    <div class="Progress-Area">
+        <label>Total Bills</label>
+        <output>£2,500</output>
+    </div>
+
+</fieldset>
+
+<!-- Submit Button -->
+ <fieldset>
+    <legend><b>Action</b></legend>
+    <div class="grid">
+        <button type="submit">Register Patient</button>
+        <button type="reset">Reset Form</button>
+        <button type="button">Print Form</button>
+    </div>
+ </fieldset>
+
+
+</head>
+<body>
+   </form>
+</div> 
+</body>
+</html>
